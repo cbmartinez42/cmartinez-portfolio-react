@@ -5,9 +5,322 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: url(./assets/images/dk-background-2.jpg);
+  background-size: 300vh; /* need to set media queries for this*/
+  color: white;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+
+
+/* body {
+  background-image: url('../images/dk-background-2.jpg')!important;
+  background-size: 300vh; 
+  need to set media queries for this */
+/* } */
+
+.nav-wrapper {
+  padding: 1.75rem;
+}
+
+nav {
+  background-color: rgba(61, 113, 182, 0.438)!important;
+  height: 8rem;
+  /* font-family: 'Fondamento', cursive; */
+  font-family: 'Montserrat', sans-serif;
+  
+}
+
+nav ul a {
+  font-size: 1.75rem;
+
+}
+
+.sidenav {
+  background-color: rgba(61, 113, 182, 0.808);
+  /* font-family: 'Fondamento', cursive; */
+  font-family: 'Montserrat', sans-serif;
+}
+
+.sidenav li>a {
+  color: white!important;
+
+}
+
+h1 {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 2rem;
+  color: white!important;
+}
+
+h4 {
+  font-family: 'Montserrat', sans-serif;
+}
+#typewriter {
+  height: 2.5rem;
+  /* margin-bottom: 1rem; */
+}
+
+.headshot {
+  border-radius: 50%;
+  /* padding: 1rem; */
+  margin-top: 5rem;
+}
+
+.info-text {
+  color: white;
+
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.25rem!important;
+}
+
+.skills-list {
+  font-size: 1rem;
+}
+
+.info-container {
+  background-color: rgba(61, 113, 182, 0.438)!important;
+  border-radius: 10px;
+  margin-top: 3rem!important;
+  padding: 1rem;
+  margin-bottom: 2rem;
+}
+
+
+#dice {
+  height: 10rem;
+  position: absolute;
+  right: 250px;
+  bottom: 200px;
+  z-index: -1;
+  /* background-image: url('../images/dice2-mblur300.png'); */
+  
+}
+
+.technologies-container {
+  background-color: rgba(168, 186, 211, 0.959)!important;
+  padding: 2rem;
+}
+
+.technologies {
+  text-align: center;
+}
+
+#node {
+  height: 75px;
+}
+
+#express {
+  height: 40px;
+}
+
+#mysql {
+  height: 70px;
+}
+
+#mongodb {
+  height: 70px;
+}
+
+#handlebars {
+  height: 50px;
+}
+
+.qc {
+  padding-left: 6rem;
+  padding-right: 6rem;
+  justify-content: center;
+  color: white;
+  font-size: 1rem;
+}
+
+.furbabies {
+  height: 20rem;
+  border-radius: 6px;
+  /* padding: 1rem; */
+}
+
+.example-container {
+  justify-content: center;
+}
+
+.custom-row {
+  padding-bottom: 4rem;
+}
+
+.card {
+  background-color: rgba(16, 37, 63, 0.774);
+  height: 400px!important;
+  padding: 0;
+}
+
+.card-content {
+  height: 250px!important;
+}
+.card-reveal {
+  background-color: rgba(16, 37, 63, 0.918)!important;
+}
+
+.card-description {
+  font-family: 'Montserrat', sans-serif;
+}
+.resume {
+  height: 10rem;
+  filter: blur(1px);
+}
+
+.resume:hover {
+  height: 10.5rem;
+  filter: none;
+  transition: 1s ease;
+}
+
+.github {
+  height: 10rem;
+  padding: 1rem;
+}
+
+.github:hover {
+  height: 10.5rem;
+  transition: 1s ease;
+}
+
+.email:hover {
+  font-size: 6.5rem!important;
+  transition: 1s ease;
+}
+
+.linkedin {
+  height: 3rem;
+}
+
+.linkedin:hover {
+  height: 3.25rem;
+  transition: 1s ease;
+}
+
+.example-container:hover .overlay {
+  opacity: 1;
+}
+
+/* blur effect and overlay for examples */
+.example-container .screenshot {
+  filter: blur(5px);
+}
+
+.example-container:hover .screenshot {
+  filter: none;
+  transition: .5s ease;
+}
+
+
+/* Media Queries for responsiveness */
+@media only screen and (max-width: 992px) {
+  .nav-wrapper a{
+      font-size: 1.5rem;
+  }
+
+  #typewriter {
+      height: .25rem;
+  }
+
+  .about-text {
+      margin-top: 5rem;
+  }
+
+  /* #dice {
+      height: 10rem;
+      right: 200px;
+      bottom: 100px;
+     
+  } */
+}
+
+@media only screen and (max-width: 768px) {
+  .nav-wrapper a{
+      font-size: 1.25rem;
+  }
+  #typewriter {
+      height: .1rem;
+  }
+
+  .about-text {
+      margin-top: 5rem;
+  }
+
+  .headshot {
+      margin-top: 5rem;
+  }
+
+  #dice {
+      height: 7.5rem;
+      right: 250px;
+      bottom: 125px;
+  
+  }
+  .card {
+      height: 275px!important;
+  }
+
+  .furbabies {
+      height: 10rem;
+  }
+
+  .custom-row {
+      padding-bottom: 4rem;
+  }
+
+}
+@media only screen and (max-width: 576px) {
+  .nav-wrapper a{
+      font-size: .9rem;
+  
+  }
+
+
+  h1 {
+      font-size: 2rem;
+  }
+
+
+}
+
+@media only screen and (max-width: 500px) {
+  .nav-wrapper a{
+      font-size: 1rem;
+   
+  }
+
+  .brand-logo {
+      font-size: .8rem!important;
+  }
+  body {
+      background-size: 150vh; 
+  }
+  
+  h1 {
+      font-size: 1.25rem;
+  }
+  
+  .headshot {
+      margin-top: 0rem;
+      height: 200px;
+  }
+
+  #dice {
+      height: 5rem;
+      right: 100px;
+      bottom: 50px;
+     
+  }
+  .card {
+      height: 300px!important;
+  }
+  .custom-row {
+      padding-bottom: 0rem;
+  }
 }
