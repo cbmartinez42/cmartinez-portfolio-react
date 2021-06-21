@@ -5,9 +5,7 @@ function Home() {
 const [text, setText] = useState('')
     // typewriter functionf for headers
 var aText = [
-    `Hi. I'm Chris.
-
-    `, 
+    `Hi. I'm Chris. `, 
     "With me, it's never a roll of the dice. ",
     "Have a look. :) ",
     "               "
@@ -28,9 +26,7 @@ var aText = [
      iRow = Math.max(0, iIndex-iScrollAt);
      
      while ( iRow < iIndex ) {
-      sContents += aText[iRow++] 
-      + "<br></br>"
-;
+      sContents += aText[iRow++] + '\n';
      }
      setText(sContents + aText[iIndex].substring(0, iTextPos) + "_");
      if ( iTextPos++ === iArrLength ) {
