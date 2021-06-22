@@ -6,9 +6,9 @@ const [text, setText] = useState('')
     // typewriter functionf for headers
 var aText = [
     `Hi. I'm Chris. `, 
-    "With me, it's never a roll of the dice. ",
-    "Have a look. :) ",
-    "               "
+    ` With me, it's never a roll of the dice. `,
+    " Have a look. :) ",
+    " "
 
 ];
     var iSpeed = 50;
@@ -45,7 +45,7 @@ var aText = [
         typewriter()
     }, [])
     return (
-        <h1>{text}</h1>
+        <h1 className="typewriter">{text}</h1>
     )
 }
 

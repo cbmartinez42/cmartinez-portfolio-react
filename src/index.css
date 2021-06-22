@@ -32,8 +32,24 @@ nav {
   height: 8rem;
   /* font-family: 'Fondamento', cursive; */
   font-family: 'Montserrat', sans-serif;
-  
 }
+
+header {
+  background-color: rgba(61, 113, 182, 0.438)!important;
+  height: 8rem;
+  /* font-family: 'Fondamento', cursive; */
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* .MuiTypogoraphy-h6 {
+  font-family: 'Montserrat', sans-serif!important;
+} */
+
+.MuiDrawer-root, .MuiPaper-root {
+  background-color: rgba(61, 113, 182, 0.438)!important;
+  color: white
+}
+
 
 nav ul a {
   font-size: 1.75rem;
@@ -57,12 +73,12 @@ h1 {
   color: white!important;
 }
 
-h4 {
-  font-family: 'Montserrat', sans-serif;
+h4, h6 {
+  font-family: 'Montserrat', sans-serif!important;
 }
-#typewriter {
+.typewriter {
   height: 2.5rem;
-  /* margin-bottom: 1rem; */
+  white-space: break-spaces 
 }
 
 .headshot {
