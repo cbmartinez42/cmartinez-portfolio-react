@@ -1,5 +1,4 @@
 import React, {useState} from "react";
-import { BrowserRouter as Router, Route } from "react-router-dom";
 import About from "../../pages/about";
 import Work from "../../pages/work";
 import Contact from "../../pages/contact";
@@ -9,13 +8,14 @@ import PersistentDrawerRight from "../PersistantDrawerRight/PersistantDrawerRigh
 
 function Header({setPage, pages}) {
     return (
-        <Router>
-            {/* <nav>
-            <div className="nav-wrapper"> */}
+        <>
+     
+
+            {/* <nav>            <div className="nav-wrapper"> */}
             {/* <a href="index.html" className="brand-logo">Chris Martinez | Full Stack Developer</a> */}
             {/* <Route exact path="/" component={Home} className="brand-logo">Chris Martinez | Full Stack Developer</Route> */}
             {/* <a href="#" data-target="mobile-demo" className="sidenav-trigger"><i className="material-icons">menu</i></a> */}
-            <PersistentDrawerRight />
+            {/* <PersistentDrawerRight /> */}
             {/* <ul className="right hide-on-med-and-down">
                 <li><Route exact path="/about" component={About}>about</Route></li>
                 <li><Route exact path= "/work" component={Work}>my work</Route></li>
@@ -33,7 +33,7 @@ function Header({setPage, pages}) {
             <li><a href="work.html">my work</a></li>
             <li><a href="contact.html">contact</a></li>    
         </ul> */}
-        </Router>
+   </>
     )
   }
 

@@ -1,10 +1,14 @@
 import React from 'react';
+import resume from "../assets/images/resume.PNG"
+import octocat from "../assets/images/Octocat.png"
+import linkedin from "../assets/images/LI-Logo.png"
 
 function Contact() {
 
 
     return (
         <>
+        <div className="container">
         <h1>This is Contact</h1>
         <div class="info-container contact-container">
           <div class="row custom-row">
@@ -12,14 +16,14 @@ function Contact() {
               <p class="info-text center-align">
                 My Resume:
               </p>
-              <a href="./assets/pdf/Chris_Martinez_Resume.pdf" target="_blank" rel="noreferrer"><img src="./assets/images/resume.PNG" alt="Resume" class="resume" /></a>
+              <a href="./assets/pdf/Chris_Martinez_Resume.pdf" target="_blank" rel="noreferrer"><img src={resume} alt="Resume" class="resume" /></a>
             </div>
 
             <div class="col s12 m6 center-align">
               <p class="info-text center-align">
                 My Github:
               </p>
-              <a href="https://github.com/cbmartinez42" target="_blank" rel="noreferrer"><img src="./assets/images/Octocat.png" alt="Github" class="github" /></a>
+              <a href="https://github.com/cbmartinez42" target="_blank" rel="noreferrer"><img src={octocat} alt="Github" class="github" /></a>
             </div>
           </div>
           
@@ -28,7 +32,7 @@ function Contact() {
               <p class="info-text center-align">
                 My LinkedIn profile:
               </p>
-              <a href="https://www.linkedin.com/in/christopher-martinez-6761ba17/" target="_blank" rel="noreferrer"><img src="./assets/images/LI-Logo.png" alt="Linked In" class="linkedin" /></a>
+              <a href="https://www.linkedin.com/in/christopher-martinez-6761ba17/" target="_blank" rel="noreferrer"><img src={linkedin} alt="Linked In" class="linkedin" /></a>
             </div>
             <div class="col s12 m6 center-align">
               <p class="info-text center-align">
@@ -43,7 +47,7 @@ function Contact() {
         <div>
           <img id="dice" src="./assets/images/dice2-mblur150.2.png" alt="" />
         </div>
-
+        </div>
       </>
     )
 }

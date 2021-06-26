@@ -1,17 +1,21 @@
 import React, {useState} from 'react';
+import chris from "../assets/images/Chris1.jpg"
+import claire from '../assets/images/qc-claire-cropped.jpeg'
+import smudge from "../assets/images/qc-smudge-light.jpg"
 
 function About() {
 
 
     return (
         <>
+        <div className="container">
         <h1>This is about</h1>
-        {/* <div className="container"> */}
+
 
         <div className="info-container">
           <div className="row">
             <div className="col s12 m6 center-align">
-            <img src="./assets/images/Chris1.jpg" alt="" className="headshot z-depth-5" />
+            <img src={chris} alt="" className="headshot z-depth-5" />
           </div>
           <div className="col s12 m6 info-text center">
             <p> I've been building computers and working with technology for over 20 years. I've worked in several industries such as telecommunications, finance, travel and 
@@ -36,8 +40,8 @@ function About() {
         </div>
         <div className="row">  
           <div className="col s12 qc center-align ">
-            <img src="./assets/images/qc-claire-cropped.jpeg" title="Claire" className="furbabies z-depth-3" alt="Claire" />
-            <img src="./assets/images/qc-smudge-light.jpg" title="Smudge" className="furbabies z-depth-3" alt="Smudge" /> 
+            <img src={claire} title="Claire" className="furbabies z-depth-3" alt="Claire" />
+            <img src={smudge} title="Smudge" className="furbabies z-depth-3" alt="Smudge" /> 
             <h6 className="flow-text qc">All my work is quality checked with ❤️ by Claire the dog and Smudge the cat for world-className excellence</h6>
           </div>
           <div className="col s4">
@@ -47,7 +51,7 @@ function About() {
         {/* <div>
           <img id="dice" src="./assets/images/dice2-mblur150.2.png" alt=""></img>
         </div> */}
-     {/* </div> */}
+     </div>
       </>
     )
 }

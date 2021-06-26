@@ -15,14 +15,6 @@ code {
     monospace;
 }
 
-/* white-space: break-spaces */
-
-/* body {
-  background-image: url('../images/dk-background-2.jpg')!important;
-  background-size: 300vh; 
-  need to set media queries for this */
-/* } */
-
 .nav-wrapper {
   padding: 1.75rem;
 }
@@ -41,29 +33,18 @@ header {
   font-family: 'Montserrat', sans-serif;
 }
 
-/* .MuiTypogoraphy-h6 {
-  font-family: 'Montserrat', sans-serif!important;
-} */
-
-.MuiDrawer-root, .MuiPaper-root {
-  background-color: rgba(61, 113, 182, 0.438)!important;
-  color: white
+.MuiDrawer-root {
+  background-color: rgb(61, 113, 182)!important;
+  color: white!important;
 }
 
+.MuiPaper-root {
+  background-color: rgba(61, 113, 182, 0.966)!important;
+  color: white!important;
+}
 
 nav ul a {
   font-size: 1.75rem;
-
-}
-
-.sidenav {
-  background-color: rgba(61, 113, 182, 0.808);
-  /* font-family: 'Fondamento', cursive; */
-  font-family: 'Montserrat', sans-serif;
-}
-
-.sidenav li>a {
-  color: white!important;
 
 }
 
@@ -109,11 +90,10 @@ h4, h6 {
 
 #dice {
   height: 10rem;
-  position: absolute;
+  position: fixed;
   right: 250px;
   bottom: 200px;
   z-index: -1;
-  /* background-image: url('../images/dice2-mblur300.png'); */
   
 }
 

@@ -15,17 +15,11 @@ import ChevronRightIcon from '@material-ui/icons/ChevronRight';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
-import InboxIcon from '@material-ui/icons/MoveToInbox';
-import MailIcon from '@material-ui/icons/Mail';
-import PersonOutlineTwoToneIcon from '@material-ui/icons/PersonOutlineTwoTone';
-import AccountTreeTwoToneIcon from '@material-ui/icons/AccountTreeTwoTone';
-import InfoTwoToneIcon from '@material-ui/icons/InfoTwoTone';
-import HomeTwoToneIcon from '@material-ui/icons/HomeTwoTone';
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import PersonOutlineOutlinedIcon from '@material-ui/icons/PersonOutlineOutlined';
+import AccountTreeOutlinedIcon from '@material-ui/icons/AccountTreeOutlined';
+import InfoOutlinedIcon from '@material-ui/icons/InfoOutlined';
+import HomeOutlinedIcon from '@material-ui/icons/HomeOutlined';
 import Home from '../../pages/home';
-import { PlayCircleFilledWhite } from '@material-ui/icons';
-
-// function CustomDrawer() {
 
 const drawerWidth = 240;
 
@@ -86,7 +80,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function PersistentDrawerRight() {
+export default function PersistentDrawerRight({setPage, pages}) {
   const classes = useStyles();
   const theme = useTheme();
   const [open, setOpen] = React.useState(false);
@@ -98,6 +92,27 @@ export default function PersistentDrawerRight() {
   const handleDrawerClose = () => {
     setOpen(false);
   };
+
+  const getIcon = (page) => {
+    // switch if page === work return icon
+    switch (page) {
+      case 'Home':
+        return <HomeOutlinedIcon/>
+        // break;
+      case 'About':
+        return <InfoOutlinedIcon/>
+        // break;
+      case 'Work':
+        return <AccountTreeOutlinedIcon/>
+        // break;
+      case 'Contact':
+        return <PersonOutlineOutlinedIcon/>
+        // break;
+      default: 
+        return <InfoOutlinedIcon/>
+    }
+    
+  }
 
   return (
     <div className={classes.root}>
@@ -116,7 +131,7 @@ export default function PersistentDrawerRight() {
             Persistent drawer
           </Typography> */}
           <Typography variant="h6" noWrap className={classes.title}>
-            <Route exact path="/" component={Home} className="brand-logo">Chris Martinez | Full Stack Developer</Route>
+            <h2 className="brand-logo" onClick={() => setPage(pages[0])}>Chris Martinez | Full Stack Developer</h2>
           </Typography>
           
           <IconButton
@@ -178,26 +193,22 @@ export default function PersistentDrawerRight() {
           </IconButton>
         </div>
         <Divider />
+
         <List>
-          {['home', 'about', 'work', 'contact'].map((text, index) => (
+          {['Home', 'About', 'Work', 'Contact'].map((text, index) => (
             <ListItem button key={text}>
-              <ListItemIcon>{index % 2 === 0 ? <HomeTwoToneIcon /> : <InfoTwoToneIcon />}</ListItemIcon>
-              <ListItemText primary={text} />
+              <ListItemIcon>{getIcon(text)}</ListItemIcon>
+              <ListItemText 
+              primary={text} 
+              onClick={() => setPage(pages[index])}
+              />
+              {/* <Link to={text}>{text}</Link> */}
             </ListItem>
           ))}
         </List>
         <Divider />
-        {/* <List>
-          {['All mail', 'Trash', 'Spam'].map((text, index) => (
-            <ListItem button key={text}>
-              <ListItemIcon>{index % 2 === 0 ? <InboxIcon /> : <MailIcon />}</ListItemIcon>
-              <ListItemText primary={text} />
-            </ListItem>
-          ))}
-        </List> */}
+
       </Drawer>
     </div>
   );
 }
-// }
-// export default CustomDrawer;

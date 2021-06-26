@@ -3,7 +3,7 @@ import React, {useState, useEffect} from 'react';
 
 function Home() {
 const [text, setText] = useState('')
-    // typewriter functionf for headers
+    // typewriter function for headers
 var aText = [
     `Hi. I'm Chris. `, 
     ` With me, it's never a roll of the dice. `,
@@ -45,7 +45,11 @@ var aText = [
         typewriter()
     }, [])
     return (
+        <>
+        <div className="container">
         <h1 className="typewriter">{text}</h1>
+        </div>
+        </>
     )
 }
 
