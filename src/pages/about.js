@@ -1,15 +1,55 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import chris from "../assets/images/Chris1.jpg"
 import claire from '../assets/images/qc-claire-cropped.jpeg'
 import smudge from "../assets/images/qc-smudge-light.jpg"
 
 function About() {
+  const [text, setText] = useState('')
+  // typewriter function for headers
+var aText = [
+  `about me`, 
 
+  " "
+
+];
+  var iSpeed = 50;
+  var iIndex = 0; 
+  var iArrLength = aText[0].length; 
+  var iScrollAt = 20; 
+   
+  var iTextPos = 0;
+  var sContents = ''; 
+  var iRow; 
+   
+  function typewriter()
+  {
+   sContents =  ' ';
+   iRow = Math.max(0, iIndex-iScrollAt);
+   
+   while ( iRow < iIndex ) {
+    sContents += aText[iRow++] + '\n';
+   }
+   setText(sContents + aText[iIndex].substring(0, iTextPos) + "_");
+   if ( iTextPos++ === iArrLength ) {
+    iTextPos = 0;
+    iIndex++;
+    if ( iIndex !== aText.length ) {
+     iArrLength = aText[iIndex].length;
+     setTimeout(typewriter, 500);
+    }
+   } else {
+    setTimeout(typewriter, iSpeed);
+   }
+  }
+
+  useEffect(() => {
+      typewriter()
+  }, [])
 
     return (
         <>
-        <div className="container">
-        <h1>This is about</h1>
+
+        <h1 className="typewriter">{text}</h1>
 
 
         <div className="info-container">
@@ -20,7 +60,7 @@ function About() {
           <div className="col s12 m6 info-text center">
             <p> I've been building computers and working with technology for over 20 years. I've worked in several industries such as telecommunications, finance, travel and 
             logistics in roles ranging from Team Leader, Commissions Analyst, Quality Analyst, Customer Service and Sales. I also served as a Subject Matter Expert for 
-            <span className="tooltip" title="Asynchronous Digital Subscriber Line/Very high Bit-rate Digital Subscriber Line">ADSL/VDSL</span> service, and acted as a senior member for a
+            <span className="tooltip" title="Asynchronous Digital Subscriber Line/Very high Bit-rate Digital Subscriber Line"> ADSL/VDSL</span> service, and acted as a senior member for a
             <span className="tooltip" title="Commonly called UAT"> User Acceptance Testing</span> team, running tests on new application releases and providing feedback to developers and 
             project managers by anticipating questions, issues and training needs that may impact when the application is pushed to production.
             I'm currently working on completing the Full Stack Developer coding program through Washington University's Technology and Leadership Center/James McKelvey 
@@ -48,10 +88,7 @@ function About() {
           </div>
         </div>
         </div>
-        {/* <div>
-          <img id="dice" src="./assets/images/dice2-mblur150.2.png" alt=""></img>
-        </div> */}
-     </div>
+
       </>
     )
 }

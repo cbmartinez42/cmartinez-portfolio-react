@@ -6,6 +6,7 @@ import Contact from './pages/contact';
 import Work from './pages/work';
 import PersistentDrawerRight from "./Components/PersistantDrawerRight/PersistantDrawerRight"
 import Dice from "./Components/Dice/Dice"
+// import Typewriter from "./Components/Typewriter/TypeWriter"
 
 function App() {
   const [pages] = useState([<Home />, <About />, <Work />, <Contact />]);
@@ -17,8 +18,11 @@ function App() {
       setPage = {setPage}
       pages = {pages}
     />
+    <div className="container">
+      {/* <Typewriter /> */}
     {page}
     <Dice />
+    </div>
     </>
     // <Router>
     //   <PersistentDrawerRight />

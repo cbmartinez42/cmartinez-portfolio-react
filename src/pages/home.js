@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react';
-
+// import Typewriter from "../Components/Typewriter/TypeWriter"
 
 function Home() {
 const [text, setText] = useState('')
@@ -46,9 +46,9 @@ var aText = [
     }, [])
     return (
         <>
-        <div className="container">
+        {/* <Typewriter /> */}
         <h1 className="typewriter">{text}</h1>
-        </div>
+
         </>
     )
 }

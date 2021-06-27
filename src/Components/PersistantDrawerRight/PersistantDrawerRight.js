@@ -19,7 +19,7 @@ import PersonOutlineOutlinedIcon from '@material-ui/icons/PersonOutlineOutlined'
 import AccountTreeOutlinedIcon from '@material-ui/icons/AccountTreeOutlined';
 import InfoOutlinedIcon from '@material-ui/icons/InfoOutlined';
 import HomeOutlinedIcon from '@material-ui/icons/HomeOutlined';
-import Home from '../../pages/home';
+
 
 const drawerWidth = 240;
 

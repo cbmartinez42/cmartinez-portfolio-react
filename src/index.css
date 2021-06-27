@@ -33,6 +33,10 @@ header {
   font-family: 'Montserrat', sans-serif;
 }
 
+.brand-logo {
+  font-family: 'Montserrat', sans-serif!important;
+}
+
 .MuiDrawer-root {
   background-color: rgb(61, 113, 182)!important;
   color: white!important;
@@ -137,7 +141,7 @@ h4, h6 {
 .furbabies {
   height: 20rem;
   border-radius: 6px;
-  /* padding: 1rem; */
+  margin: 1rem;
 }
 
 .example-container {
