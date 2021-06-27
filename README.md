@@ -27,7 +27,8 @@ The deployed application can be located at: https://cbmartinez42.github.io/cbmar
 ## Installation Instructions
 To install this application, please follow the below instructions:  
 1.  Clone or download .zip file from Github to your local computer
-2.  Open index.html via your preferred browser or code/text editor
+2.  Install dependencies using `npm install` from terminal or git bash
+3.  Type `npm start` from the terminal or git bash to start the React application
 
 ## Usage
 This is to be used to preview my work and find contact information
