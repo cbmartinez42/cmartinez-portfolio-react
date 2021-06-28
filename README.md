@@ -15,7 +15,7 @@ This is a portfolio utilizing React intended to provide prospective collaborator
 The deployed application can be located at: https://cbmartinez42.github.io/cbmartinez-portfolio/   
   
 ### Screenshot:   
-![Screenshot](./assets/images/screenshot.png)
+![Screenshot](./assets/images/screenshot.PNG)
 
 #### Features
 * This site is a showcase for information about me and my work, intended for prospective collaborators and employers
