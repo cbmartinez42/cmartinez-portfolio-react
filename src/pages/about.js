@@ -1,56 +1,15 @@
-import React, {useState, useEffect} from 'react';
+import React from 'react';
 import chris from "../assets/images/Chris1.jpg"
 import claire from '../assets/images/qc-claire-cropped.jpeg'
 import smudge from "../assets/images/qc-smudge-light.jpg"
 import Typewriter from "../Components/Typewriter/TypeWriter"
 
 function About() {
-//   const [text, setText] = useState('')
-//   // typewriter function for headers
-// var aText = [
-//   `about me`, 
-
-//   " "
-
-// ];
-//   var iSpeed = 50;
-//   var iIndex = 0; 
-//   var iArrLength = aText[0].length; 
-//   var iScrollAt = 20; 
-   
-//   var iTextPos = 0;
-//   var sContents = ''; 
-//   var iRow; 
-   
-//   function typewriter()
-//   {
-//    sContents =  ' ';
-//    iRow = Math.max(0, iIndex-iScrollAt);
-   
-//    while ( iRow < iIndex ) {
-//     sContents += aText[iRow++] + '\n';
-//    }
-//    setText(sContents + aText[iIndex].substring(0, iTextPos) + "_");
-//    if ( iTextPos++ === iArrLength ) {
-//     iTextPos = 0;
-//     iIndex++;
-//     if ( iIndex !== aText.length ) {
-//      iArrLength = aText[iIndex].length;
-//      setTimeout(typewriter, 500);
-//     }
-//    } else {
-//     setTimeout(typewriter, iSpeed);
-//    }
-//   }
-
-//   useEffect(() => {
-//       typewriter()
-//   }, [])
 
     return (
         <>
         <Typewriter
-          text={"About Me \n "}
+          text={["About Me \n "]}
         />
         {/* <h1 className="typewriter">{text}</h1> */}
 
