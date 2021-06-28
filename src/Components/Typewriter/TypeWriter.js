@@ -1,16 +1,17 @@
 import React, {useState, useEffect} from "react";
 
-function Typewriter() {
+function Typewriter(props) {
 
     const [text, setText] = useState('')
     // typewriter function for headers
-var aText = [
-    `Hi. I'm Chris. `, 
-    ` With me, it's never a roll of the dice. `,
-    " Have a look. :) ",
-    " "
+    var aText = props.text
+    // [
+    //     `Hi. I'm Chris. `, 
+    //     ` With me, it's never a roll of the dice. `,
+    //     " Have a look. :) ",
+    //     " "
 
-];
+    // ];
     var iSpeed = 50;
     var iIndex = 0; 
     var iArrLength = aText[0].length; 
@@ -26,7 +27,7 @@ var aText = [
      iRow = Math.max(0, iIndex-iScrollAt);
      
      while ( iRow < iIndex ) {
-      sContents += aText[iRow++] + '\n';
+      sContents += aText[iRow++]; //   + '\n'
      }
      setText(sContents + aText[iIndex].substring(0, iTextPos) + "_");
      if ( iTextPos++ === iArrLength ) {
@@ -46,7 +47,9 @@ var aText = [
     }, [])
 
     return (
+        <>
         <h1 className="typewriter">{text}</h1>
+        </>
     )
 }
 
