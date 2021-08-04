@@ -4,6 +4,7 @@ import Answer42 from "../assets/images/answer42.PNG"
 import Boredify from "../assets/images/boredify.png"
 import WeatherDashboard from "../assets/images/weatherdashboard.png"
 import Typewriter from "../Components/Typewriter/TypeWriter"
+import DoThis from "../assets/images/dothis.PNG"
 
 
 function Work() {
@@ -15,20 +16,59 @@ function Work() {
           text={["My Work \n "]}
         />
          {/* <h1 className="typewriter">{text}</h1> */}
-          <div class="info-container">
-          <div class="row">
-            <div class="work-cards">
-              <div class="row">
-                <div class="col s12">
-                  <p class="info-text center">
-                    Below are some examples of my work, including Jenn's Hens, answer42 and Boredify. Jenn's Hens and Boredify were collaborative efforts, while answer42 is a full-stack application 
+          <div className="info-container">
+          <div className="row">
+            <div className="work-cards">
+              <div className="row">
+                <div className="col s12">
+                  <p className="info-text center">
+                    Below are some examples of my work, including DoThis, Jenn's Hens, answer42 and Boredify. Jenn's Hens and Boredify were collaborative efforts, while answer42 is a full-stack application 
                     that I created myself and the Weather Dashboard is a front-end application utilizing a third-party API. Click the image for more info on each.
                   </p>
-                  <p class="info-text center">
+                  <p className="info-text center">
                     For more examples, please feel free to view my complete Github profile from the Contact page.  
                   </p>
                 </div>
               </div>
+              <div className="row">
+              <div className="col s2"></div>
+              <div className="col s12 m8 offset-1 center-align">
+                <div className="card large example-container center-align  hoverable z-depth-3">
+                  <div className="card-image waves-effect waves-block waves-light ">
+                    <img className="activator screenshot" src={DoThis} alt="Do This"></img>
+                  </div>
+                  <div className="card-content">
+                    {/* <!-- <div className="overlay"> --> */}
+                      <p><span className="card-title activator white-text">DoThis<i className="material-icons right">more_vert</i></span></p>
+                      <p className="white-text card-description">A tourism e-commerce application</p>
+                    {/* <!-- </div> --> */}
+                  </div>
+                  <div className="card-reveal">
+                    <span className="card-title white-text text-darken-4">DoThis<i className="material-icons right">close</i></span>
+                    <p className="white-text card-description">An e-commerce site focused on tourism. This MERN application is build for two personas - Admin and User. A smooth UI allows the User to navigate the site to browse, search and book tours
+                      and other activities, and Admins can modify existing users permission level, add Tour Operators and new tours. Paypal and Calendly are linked on the back end to check for payment after a tour is scheduled to allow Admins to 
+                      be able to manage receivables. Future implimentations will allow Admins to view bookings, Users to view their booking history, and create a new persona for Tour Operators to be able to add and manage their own tours and bookings. 
+                    </p>
+                    <p className="white-text card-description">Technologies: React, NodeJS, Express, JWT, MongoDB, PayPal payments & Calendly scheduling API</p>
+                    {/* <!-- <div class="technologies">
+                      <img src="./assets/images/logos/nodejs-2.svg" id="node" alt="NodeJS" title="NodeJS">NodeJS
+                    </div>
+                    <div class="technologies">
+                      <img src="./assets/images/logos/express-109.svg" id="express" alt="Express" title="Express">
+                    </div>
+                    <div class="technologies">
+                      <img src="./assets/images/logos/mysql-6.svg" id="mysql" alt="MySQL" title="MySQL">
+                    </div>
+                    <div class="technologies">
+                      <img src="./assets/images/logos/handlebars-1.svg" id="handlebars" alt="Handlebars" title="Handlebars">
+                    </div> --> */}
+                    <p><a href="http://do-this-travel.herokuapp.com/" target="_blank">Deployed site</a></p>
+                    <p><a href="https://github.com/cbmartinez42/mA-travel-app" target="_blank">Github Repository</a></p>
+                  </div>
+                </div>
+              </div>   
+              <div class="col s2"></div>
+            </div>
               <div class="row">
                 <div class="col s12 m6 offset-1 center-align">
                   <div class="card large example-container center-align  hoverable z-depth-3">

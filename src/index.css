@@ -26,6 +26,9 @@ nav {
   font-family: 'Montserrat', sans-serif;
 }
 
+#hamburger {
+  font-size: 3rem;
+}
 header {
   background-color: rgba(61, 113, 182, 0.438)!important;
   height: 8rem;

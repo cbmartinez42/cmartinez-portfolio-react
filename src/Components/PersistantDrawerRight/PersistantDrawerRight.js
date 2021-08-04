@@ -140,8 +140,11 @@ export default function PersistentDrawerRight({setPage, pages}) {
             edge="end"
             onClick={handleDrawerOpen}
             className={clsx(open && classes.hide)}
+            
           >
-            <MenuIcon />
+            <MenuIcon 
+              id="hamburger"
+            />
           </IconButton>
         </Toolbar>
         
