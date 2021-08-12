@@ -4,7 +4,7 @@ function Projects() {
 
 
     return (
-        <Grid container spacing={lg}>
+        <Grid container alignItems="center" spacing={1}>
             <Grid item xs={12}>
                 This is projects
             </Grid>
