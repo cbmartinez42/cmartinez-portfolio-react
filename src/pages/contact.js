@@ -19,7 +19,7 @@ function Contact() {
               <p class="info-text center-align">
                 My Resume:
               </p>
-              <a href="./assets/pdf/Chris_Martinez_Resume.pdf" target="_blank" rel="noreferrer"><img src={resume} alt="Resume" class="resume" /></a>
+              <a href="./assets/pdf/Chris-Martine-Resume.pdf" target="_blank" rel="noreferrer"><img src={resume} alt="Resume" class="resume" /></a>
             </div>
 
             <div class="col s12 m6 center-align">

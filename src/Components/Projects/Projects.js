@@ -2,6 +2,19 @@ import { Grid } from '@material-ui/core'
 
 function Projects() {
 
+    const leadProject = {
+
+    }
+
+    const project = [
+        {
+
+        },
+        {
+
+        }
+    ]
+
 
     return (
         <Grid container alignItems="center" spacing={1}>
